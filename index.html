@@ -5,12 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>久保石油（矢田野給油所）｜公式サイト（仮公開）</title>
   <meta name="description" content="石川県小松市矢田野町のガソリンスタンド・久保石油（矢田野給油所）。給油、点検、タイヤ交換。営業時間や地図、予約フォームはこちら。">
+  <link rel="canonical" href="https://kubo-oil.example.jp/">
+  <!-- OGP / Twitter -->
+  <meta property="og:site_name" content="久保石油（矢田野給油所）">
+  <meta property="og:title" content="久保石油（矢田野給油所）｜公式サイト（仮公開）">
+  <meta property="og:description" content="石川県小松市矢田野町のガソリンスタンド。給油、点検、タイヤ交換。営業時間や予約はこちら。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="https://kubo-oil.example.jp/">
+  <!-- 画像が用意できたら差し替え -->
+  <meta property="og:image" content="https://kubo-oil.example.jp/ogp.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
   <style>
     :root{--bg:#f7f7f9;--fg:#222;--pri:#0f766e;--mut:#64748b;--line:#e5e7eb}
     *{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}
     body{margin:0;background:var(--bg);color:var(--fg);line-height:1.7}
     header{padding:18px 16px;background:linear-gradient(90deg,#0f766e,#0ea5a3);color:#fff}
     header h1{margin:0;font-size:20px}
+    header nav{margin-top:6px;font-size:13px;opacity:.95}
+    header nav a{color:#eafffb;text-decoration:none;margin-right:12px}
     .wrap{max-width:920px;margin:0 auto;padding:18px 16px}
     h2{font-size:18px;margin:0 0 10px}
     .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:16px}
@@ -21,40 +35,55 @@
     .map{aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
     iframe{width:100%;height:100%;border:0}
     footer{padding:24px 16px;color:#475569;font-size:12px;border-top:1px solid var(--line)}
+    /* モバイル固定CTA */
+    .sticky-cta{position:sticky;bottom:0;background:#ffffffcc;border-top:1px solid var(--line);backdrop-filter:blur(4px);padding:10px 12px}
+    .sticky-cta a{display:block;text-align:center}
   </style>
 </head>
 <body>
   <header>
     <h1>久保石油（矢田野給油所）</h1>
     <div class="mut">創業65年｜小松市・矢田野町のGS</div>
+    <nav aria-label="主要メニュー">
+      <a href="#info">基本情報</a>
+      <a href="#services">サービス</a>
+      <a href="#reserve">予約</a>
+      <a href="#faq">FAQ</a>
+    </nav>
   </header>
 
   <main class="wrap">
-    <section class="card">
+    <section id="info" class="card">
       <h2>基本情報</h2>
-      <p>住所：〒923-0342 石川県小松市矢田野町へ19<br>
+      <p>住所：
+        <a href="https://maps.google.com/?q=石川県小松市矢田野町へ19" target="_blank" rel="noopener">
+          〒923-0342 石川県小松市矢田野町へ19
+        </a><br>
          電話：<a href="tel:0761430011">0761-43-0011</a><br>
-         営業時間：平日 8:00–20:00 ／ 日・祝 9:00–18:00</p>
+         営業時間：平日 8:00–20:00 ／ 日・祝 9:00–18:00
+      </p>
       <p class="mut">※ ワンオペ時間帯は作業受付にお時間をいただく場合があります。</p>
       <p><a class="btn" href="#reserve">冬タイヤ交換の予約へ</a></p>
     </section>
 
     <section class="grid">
-      <div class="card">
+      <div id="services" class="card">
         <h2>サービス</h2>
         <ul>
           <li>給油・簡易安全点検（タイヤ・ワイパー・灯火）</li>
           <li>冬タイヤへの履き替え・タイヤ販売</li>
           <li>（予告）レンタカー導入・セールスルーム活用</li>
         </ul>
+        <p class="mut">※ 価格・在庫・作業枠はお電話でご確認ください。</p>
       </div>
 
       <div class="card">
         <h2>アクセス</h2>
         <div class="map">
-          <!-- ▼ Googleマップ埋め込み（そのまま使用可） -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d948.7841663690674!2d136.42386451703405!3d36.34832462822198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff859d7aaebdbfd%3A0xdac0205a17c6905!2z44Kz44K544Oi55-z5rK5IOefoueUsOmHjlNT!5e0!3m2!1sja!2sjp!4v1755748092553!5m2!1sja!2sjp"
-                  loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d948.7841663690674!2d136.42386451703405!3d36.34832462822198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff859d7aaebdbfd%3A0xdac0205a17c6905!2z44Kz44K544Oi55-z5rK5IOefoueUsOmHjlNT!5e0!3m2!1sja!2sjp!4v1755748092553!5m2!1sja!2sjp"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+            title="久保石油（矢田野給油所）の地図">
           </iframe>
         </div>
       </div>
@@ -64,71 +93,104 @@
       <h2>冬タイヤ交換 予約</h2>
       <p>以下のフォームから仮予約を送信してください。店舗からの折り返しで確定となります。</p>
       <div class="map" style="aspect-ratio:4/3">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1C1QIqtoSf_xqktt6eB1PWGOWW2was969Jr4tzxomTxKfsQ/viewform?embedded=true"
-                style="height:800px"></iframe>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd1C1QIqtoSf_xqktt6eB1PWGOWW2was969Jr4tzxomTxKfsQ/viewform?embedded=true"
+          loading="lazy" title="冬タイヤ交換 予約フォーム"></iframe>
       </div>
-      <p class="mut">※ 後日、独自フォーム（メール送信・CSV・カレンダー）に切り替え可能です。</p>
+      <p class="mut">※ 後日、独自フォーム（メール送信・CSV・カレンダー）に切り替え予定です。</p>
     </section>
+
     <section id="faq" class="card">
-  <h2>よくある質問（FAQ）</h2>
+      <h2>よくある質問（FAQ）</h2>
 
-  <details>
-    <summary>予約なしでもタイヤ交換はできますか？</summary>
-    <p>当日の混雑状況により対応します。ピーク期（11〜12月）はお待ち時間が長くなるため予約をおすすめします。</p>
-  </details>
+      <details><summary>予約なしでもタイヤ交換はできますか？</summary>
+        <p>当日の混雑状況により対応します。ピーク期（11〜12月）はお待ち時間が長くなるため予約をおすすめします。</p>
+      </details>
 
-  <details>
-    <summary>作業時間はどのくらいですか？</summary>
-    <p>1台あたりの目安は20〜40分です（車種・ナット形状・混雑状況で前後します）。</p>
-  </details>
+      <details><summary>作業時間はどのくらいですか？</summary>
+        <p>1台あたりの目安は20〜40分です（車種・ナット形状・混雑状況で前後します）。</p>
+      </details>
 
-  <details>
-    <summary>当日に持っていくものはありますか？</summary>
-    <p>「ホイールロックナットキー（盗難防止ナット）」「車両のホイールナット（必要な場合）」をご持参ください。タイヤは積み込みや受け渡しをお手伝いします。</p>
-  </details>
+      <details><summary>当日に持っていくものはありますか？</summary>
+        <p>「ホイールロックナットキー（盗難防止ナット）」「車両のホイールナット（必要な場合）」をご持参ください。タイヤは積み込みや受け渡しをお手伝いします。</p>
+      </details>
 
-  <details>
-    <summary>支払い方法は？</summary>
-    <p>現金のほかキャッシュレスにも順次対応予定です。店頭でご案内します。</p>
-  </details>
+      <details><summary>支払い方法は？</summary>
+        <p>現金のほかキャッシュレスにも順次対応予定です。店頭でご案内します。</p>
+      </details>
 
-  <details>
-    <summary>ワンオペの時間帯は対応できますか？</summary>
-    <p>対応しますが、給油・安全確保を優先するため作業開始までお時間をいただく場合があります。お急ぎの方は予約をご利用ください。</p>
-  </details>
+      <details><summary>ワンオペの時間帯は対応できますか？</summary>
+        <p>対応しますが、給油・安全確保を優先するため作業開始までお時間をいただく場合があります。お急ぎの方は予約をご利用ください。</p>
+      </details>
 
-  <details>
-    <summary>雨・雪の日も交換できますか？</summary>
-    <p>可能です。天候や路面状況により安全確保のため作業時間が延びる場合があります。</p>
-  </details>
+      <details><summary>雨・雪の日も交換できますか？</summary>
+        <p>可能です。天候や路面状況により安全確保のため作業時間が延びる場合があります。</p>
+      </details>
 
-  <details>
-    <summary>キャンセル・日時変更はできますか？</summary>
-    <p>可能です。お手数ですがお電話（0761-43-0011）でご連絡ください。直前の変更はお待ち時間が発生する場合があります。</p>
-  </details>
+      <details><summary>キャンセル・日時変更はできますか？</summary>
+        <p>可能です。お手数ですがお電話（<a href="tel:0761430011">0761-43-0011</a>）でご連絡ください。直前の変更はお待ち時間が発生する場合があります。</p>
+      </details>
 
-  <details>
-    <summary>タイヤの保管はお願いできますか？</summary>
-    <p>現在はお預かり枠に限りがあります。まずはご相談ください。</p>
-  </details>
+      <details><summary>タイヤの保管はお願いできますか？</summary>
+        <p>現在はお預かり枠に限りがあります。まずはご相談ください。</p>
+      </details>
 
-  <details>
-    <summary>代車はありますか？</summary>
-    <p>基本は店内・お車でお待ちいただきます。ご事情がある場合は事前にご相談ください（レンタカー導入予定）。</p>
-  </details>
+      <details><summary>代車はありますか？</summary>
+        <p>基本は店内・お車でお待ちいただきます。ご事情がある場合は事前にご相談ください（レンタカー導入予定）。</p>
+      </details>
 
-  <details>
-    <summary>価格の目安は？</summary>
-    <p>車種・サイズにより異なります。店頭でお見積りいたします（お電話でも目安をご案内します）。</p>
-  </details>
+      <details><summary>価格の目安は？</summary>
+        <p>車種・サイズにより異なります。店頭でお見積りいたします（お電話でも目安をご案内します）。</p>
+      </details>
 
-  <p class="mut" style="margin-top:8px">※内容は状況により変更になる場合があります。最新の受付状況はお電話でお問い合わせください。</p>
-</section>
-
+      <p class="mut" style="margin-top:8px">※内容は状況により変更になる場合があります。最新の受付状況はお電話でお問い合わせください。</p>
+    </section>
   </main>
+
+  <!-- モバイル向け固定CTA -->
+  <div class="sticky-cta">
+    <a class="btn" href="#reserve">今すぐ冬タイヤ交換を予約</a>
+  </div>
 
   <footer>
     © 久保石油（矢田野給油所）
   </footer>
+
+  <!-- 構造化データ（ローカルSEO強化）-->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "久保石油（矢田野給油所）",
+    "image": "https://kubo-oil.example.jp/ogp.jpg",
+    "telephone": "+81-761-43-0011",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "矢田野町へ19",
+      "addressLocality": "小松市",
+      "addressRegion": "石川県",
+      "postalCode": "923-0342",
+      "addressCountry": "JP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.3483246,
+      "longitude": 136.4238645
+    },
+    "url": "https://kubo-oil.example.jp/",
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    },{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday","Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }]
+  }
+  </script>
 </body>
 </html>
+
