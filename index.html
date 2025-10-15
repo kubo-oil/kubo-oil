@@ -49,6 +49,7 @@
       <a href="#services">サービス</a>
       <a href="#reserve">予約</a>
       <a href="#faq">FAQ</a>
+      <a href="#price">料金表</a> 
     </nav>
   </header>
 
@@ -146,6 +147,47 @@
       <p class="mut" style="margin-top:8px">※内容は状況により変更になる場合があります。最新の受付状況はお電話でお問い合わせください。</p>
     </section>
   </main>
+  <section id="price" class="card">
+  <h2>料金表（目安）</h2>
+  <table style="width:100%;border-collapse:collapse">
+    <thead style="background:#f1f5f9">
+      <tr>
+        <th style="border:1px solid #ddd;padding:8px;text-align:left">サービス</th>
+        <th style="border:1px solid #ddd;padding:8px;text-align:left">車種区分</th>
+        <th style="border:1px solid #ddd;padding:8px;text-align:right">料金（税込）</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:1px solid #ddd;padding:8px">タイヤ交換（夏⇔冬）</td>
+        <td style="border:1px solid #ddd;padding:8px">軽自動車</td>
+        <td style="border:1px solid #ddd;padding:8px;text-align:right">○○円</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd;padding:8px"></td>
+        <td style="border:1px solid #ddd;padding:8px">普通車</td>
+        <td style="border:1px solid #ddd;padding:8px;text-align:right">○○円</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd;padding:8px"></td>
+        <td style="border:1px solid #ddd;padding:8px">SUV・大型</td>
+        <td style="border:1px solid #ddd;padding:8px;text-align:right">○○円</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd;padding:8px">オイル交換</td>
+        <td style="border:1px solid #ddd;padding:8px">軽・普通車</td>
+        <td style="border:1px solid #ddd;padding:8px;text-align:right">○○円〜</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd;padding:8px">ワイパー交換</td>
+        <td style="border:1px solid #ddd;padding:8px">全車種</td>
+        <td style="border:1px solid #ddd;padding:8px;text-align:right">○○円〜</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="mut" style="margin-top:8px">※料金は目安です。詳しくは店頭またはお電話でご確認ください。</p>
+</section>
+
 
   <!-- モバイル向け固定CTA -->
   <div class="sticky-cta">
@@ -157,40 +199,29 @@
   </footer>
 
   <!-- 構造化データ（ローカルSEO強化）-->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "name": "久保石油（矢田野給油所）",
-    "image": "https://kubo-oil.example.jp/ogp.jpg",
-    "telephone": "+81-761-43-0011",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "矢田野町へ19",
-      "addressLocality": "小松市",
-      "addressRegion": "石川県",
-      "postalCode": "923-0342",
-      "addressCountry": "JP"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 36.3483246,
-      "longitude": 136.4238645
-    },
-    "url": "https://kubo-oil.example.jp/",
-    "openingHoursSpecification": [{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "08:00",
-      "closes": "20:00"
-    },{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Sunday","Saturday"],
-      "opens": "09:00",
-      "closes": "18:00"
-    }]
-  }
-  </script>
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "久保石油（矢田野給油所）",
+  "image": "https://kubo-oil.jp/ogp.jpg",
+  "telephone": "+81-761-43-0011",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "矢田野町へ19",
+    "addressLocality": "小松市",
+    "addressRegion": "石川県",
+    "postalCode": "923-0342",
+    "addressCountry": "JP"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 36.3483246, "longitude": 136.4238645 },
+  "url": "https://kubo-oil.jp/",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:00", "closes": "18:00" }
+  ]
+}
+</script>
 </body>
 </html>
 
